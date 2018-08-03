@@ -26,7 +26,7 @@ body{
   text-align: center;
 }
 h2{
-  width: 300px;
+  width: 100%;
   height: 70px;
   color: aliceblue;
   margin: 0%;
@@ -73,9 +73,30 @@ h2{
   from{ transform: rotate(0deg)}
   to{transform: rotate(-360deg)}
 }
-/* estilos del map */
-#map{
-  border: #000000 solid 5px;
-  width: 50%;
-  height: 75px;
+/* Estilos del map */
+header{
+  margin: 0%;
+  background-color: #E74C3C;
+  width: 100%;
+  height: 105px;
+  text-align: center;
+}
+h1{ 
+  margin: 0;
+  text-align: center;
+  font-size: 100px;
+  display: inline;
+}
+img{
+  margin: 0;
+  position: absolute;
+  width: 100px;
+  height: 105px;
+}
+
+#map {
+  position: absolute;
+  width: 75%;
+  height: 325px;
+  margin: 10%;
 }

@@ -1,4 +1,5 @@
 const preload = document.getElementById('preload');
-setTimeout(()=>{
-  preload.classList.add('close');
+setTimeout(() => {
+  window.location = 'main.html';
 }, 2000)
+
