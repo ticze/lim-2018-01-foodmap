@@ -87,13 +87,6 @@ h1{
   font-size: 70px;
   display: inline;
 }
-img{
-  margin: 0;
-  position: relative;
-  width: 100px;
-  height: 105px;
-  display: inline-block ;
-}
 
 #map {
   position: absolute;
