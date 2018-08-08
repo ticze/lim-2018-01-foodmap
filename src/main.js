@@ -35,7 +35,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     'Error: su navegador no admite la geolocalización.');
   infoWindow.open(map);
 }
-
 //filtrado de comidas
 const urlFood = '../dataFood/food.json';
 const filterFood = document.getElementById('search');
