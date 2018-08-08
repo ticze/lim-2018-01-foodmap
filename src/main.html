@@ -13,19 +13,19 @@
 </head>
 
 <body>
-  <section class="preload" id="preload">
-    <div class="logo">
-      <p class="h1">FOODMAP</p>
-      <img src="../img/LogoMakr_0w7Rau.png" alt="logo">
+  <section>
+    <header>
+      <h1>FOODMAP</h1>
+    </header>
+    <input type="search" id="search">
+    <div id="map">
     </div>
-    <div class="loader-frame">
-      <div class="loader1" id="loader1"></div>
-      <div class="loader2" id="loader2"></div>
+    <div id="listFood">
     </div>
   </section>
-  
-  <script src="index.js"></script>
- 
+  <script src="main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARchqnV6E4XnCMiDB1yG5CsW6wfLHCqeo&callback=initMap" async
+    defer></script>
 </body>
 
 </html>
