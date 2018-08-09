@@ -52,12 +52,18 @@ const handleError = () => {
 }
 
 const addFood = () =>{
-  const food = JSON.parse(event.target.responseText);
+  const datafood = JSON.parse(event.target.responseText);
+  // console.log(food)
   filterFood.addEventListener('keyup', ()=>{
-
+    let searchFood = filterFood.value;
+    console.log(searchFood);
+    const mapFood = datafood.map((elemt)=>{
+      return elemt.food;
+      })
+    console.log(mapFood);
   })
 }
-
+getJSON(addFood)
 const listfood =()=>{
   localFood.innerHTML += `
   <div>
