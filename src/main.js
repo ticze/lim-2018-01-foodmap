@@ -50,20 +50,22 @@ const getJSON = (callback) => {
 const handleError = () => {
   console.log('Se ha presentado un error');
 }
-
+let valFood = {
+  search :'',
+  data : []
+}
+// Callback
 const addFood = () =>{
   const datafood = JSON.parse(event.target.responseText);
-  // console.log(food)
+  valFood.data = datafood;
   filterFood.addEventListener('keyup', ()=>{
     let searchFood = filterFood.value;
-    console.log(searchFood);
-    const mapFood = datafood.map((elemt)=>{
-      return elemt.food;
-      })
-    console.log(mapFood);
+    valFood.search = searchFood;
+    funtFood(valFood)
   })
 }
 getJSON(addFood)
+// Mostrar Lugares
 const listfood =()=>{
   localFood.innerHTML += `
   <div>
