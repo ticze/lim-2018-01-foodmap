@@ -1,3 +1,8 @@
+// // callMaterialize
+// $(function(){
+//   $('#modal1').modal();
+// })
+
 //filtrado de comidas
 const urlFood = '../dataFood/food.json';
 const filterFood = document.getElementById('search');
@@ -27,7 +32,7 @@ const addFood = () => {
     valFood.search = searchFood;
     const searchDate = funtFood(valFood)
     localFood.innerHTML = '';
-    // listfood(searchDate)
+    listfood(searchDate)
   });
 }
 getJSON(addFood)
@@ -39,9 +44,23 @@ const listfood = (typeFood) => {
     <img src="${comida.image}" alt="">
     <ul>
       <li>${comida.name}</li>
-      <li>${comida.food}</li>
     </ul>
+    <a href="#modal1" class ="btn red modal-trigger">Informe</a>
+    <div class="modal" id="modal1">
+  <div class="modal-content">
+      <img src="${comida.image}" alt="">
+      <ul>
+        <li>${comida.name}</li>
+        <li>${comida.address}</li>
+        <li>${comida.price}</li>
+      </ul>
+  </div>
+  <div class="modalfooter">
+    <a href="#" class="modal-action modal-close btn green">Ordenar</a>
+  </div>
+</div>
   </div>
 `;
   })
 }
+
