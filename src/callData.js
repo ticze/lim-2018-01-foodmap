@@ -1,8 +1,3 @@
-// // callMaterialize
-// $(function(){
-//   $('#modal1').modal();
-// })
-
 //filtrado de comidas
 const urlFood = '../dataFood/food.json';
 const filterFood = document.getElementById('search');
@@ -32,7 +27,7 @@ const addFood = () => {
     valFood.search = searchFood;
     const searchDate = funtFood(valFood)
     localFood.innerHTML = '';
-    listfood(searchDate)
+    filfood(searchDate)
   });
 }
 getJSON(addFood)
@@ -45,22 +40,49 @@ const listfood = (typeFood) => {
     <ul>
       <li>${comida.name}</li>
     </ul>
-    <a href="#modal1" class ="btn red modal-trigger">Informe</a>
-    <div class="modal" id="modal1">
-  <div class="modal-content">
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informe</a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
       <img src="${comida.image}" alt="">
       <ul>
         <li>${comida.name}</li>
         <li>${comida.address}</li>
         <li>${comida.price}</li>
       </ul>
-  </div>
-  <div class="modalfooter">
-    <a href="#" class="modal-action modal-close btn green">Ordenar</a>
-  </div>
-</div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ordenar</a>
+    </div>
+    </div>
   </div>
 `;
   })
 }
-
+const filfood = (typeFood) => {
+  typeFood.map((comida) => {
+    localFood.innerHTML += `
+  <div>
+    <img src="${comida.image}" alt="">
+    <ul>
+      <li>${comida.name}</li>
+    </ul>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informe</a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+      <img src="${comida.image}" alt="">
+      <ul>
+        <li>${comida.name}</li>
+        <li>${comida.address}</li>
+        <li>${comida.price}</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ordenar</a>
+    </div>
+    </div>
+  </div>
+`;
+  })
+}

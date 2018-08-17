@@ -1,7 +1,7 @@
 [
   {
     "name": "Pizza Hut",
-    "food": "pizza, comida italiana, postre,pasta",
+    "food": "pizza, comida italiana, postre,pasta, pollo",
     "address": "Centro Comercial Real Plaza Primavera, Av. Angamos Este 2681, San Borja 15036",
     "price": "S/19.90 a S/49.90",
     "image": "../img/Rede-de-pizzarias-Pizza-Hut.jpg"
@@ -15,7 +15,7 @@
   },
   {
     "name": "Cevichería Punto Marisko",
-    "food": "comida marina , ceviche, arroz con marisco,cevicheria",
+    "food": "comida marina , ceviche, arroz con marisco,cevicheria, pescado",
     "address": "Av. Gral. Juan Antonio Pezet 1467, San Isidro 15076",
     "price": "S/25.00 a S/55.00",
     "image": "../img/fachada-del-restaurante.jpg"
@@ -29,14 +29,14 @@
   },
   {
     "name": "Rustica",
-    "food": "rustica, bebidas, comida criolla, ensaladas",
+    "food": "rustica, bebidas, comida criolla, ensaladas,pollo a la brasa",
     "address": "CORREDOR COSTA VERDE, Barranco 15063",
     "price": "S/.10 a S/.80",
     "image": "../img/rustica-8916.jpg"
   },
   {
     "name": "Restaurant Vegetariano SAYEL",
-    "food": "comida vegetariana , quinua,ensaladas",
+    "food": "comida vegetariana , quinua,ensaladas, sancochado",
     "address": "Calle Cantuarias 285, Miraflores 15074",
     "price": "S/13.00 a S/19.00",
     "image": "../img/vegetariano.jpg"
