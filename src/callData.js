@@ -27,49 +27,24 @@ const addFood = () => {
     valFood.search = searchFood;
     const searchDate = funtFood(valFood)
     localFood.innerHTML = '';
-    filfood(searchDate)
+    listfood(searchDate);
   });
 }
 getJSON(addFood)
 //Lugares
 const listfood = (typeFood) => {
+  let cont = 0;
   typeFood.map((comida) => {
+    cont++
     localFood.innerHTML += `
   <div>
     <img src="${comida.image}" alt="">
     <ul>
       <li>${comida.name}</li>
     </ul>
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informe</a>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1${cont}">Informe</a>
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-    <div class="modal-content">
-      <img src="${comida.image}" alt="">
-      <ul>
-        <li>${comida.name}</li>
-        <li>${comida.address}</li>
-        <li>${comida.price}</li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ordenar</a>
-    </div>
-    </div>
-  </div>
-`;
-  })
-}
-const filfood = (typeFood) => {
-  typeFood.map((comida) => {
-    localFood.innerHTML += `
-  <div>
-    <img src="${comida.image}" alt="">
-    <ul>
-      <li>${comida.name}</li>
-    </ul>
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informe</a>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="modal1${cont}" class="modal">
     <div class="modal-content">
       <img src="${comida.image}" alt="">
       <ul>
